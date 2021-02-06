@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mysql-sandbox:
+    container_name: mysql-sandbox
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+    ports:
+      - "3306:3306"
+    tmpfs:
+      - /tmp/:rw,noexec,nosuid
+

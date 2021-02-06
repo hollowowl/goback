@@ -1,0 +1,9 @@
+{
+    "db": {
+        "type": "mysql",
+        "dsn": "root:pass@tcp(127.0.0.1:3306)/data"
+    },
+    "server": {
+        "addr": ":8090"
+    }
+}
