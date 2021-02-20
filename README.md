@@ -18,3 +18,9 @@ docker-compose up -d
 ```
 go run cmd/server/main.go config/config-test.json
 ```
+or  
+```
+go build cmd/server/main.go 
+./main config/config-test.json
+```
+

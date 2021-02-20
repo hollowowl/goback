@@ -21,5 +21,6 @@ func main() {
 	if err != nil {
 		log.Fatalln("Server init failed", err.Error())
 	}
+	log.Println("Staring server...")
 	server.Run()
 }

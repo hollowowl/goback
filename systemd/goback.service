@@ -1,0 +1,25 @@
+# fix PATH_TO_BUILT_MAIN, PATH_TO_PROD_CONFIG
+# put to /lib/systemd/system/goback.service
+
+[Unit]
+Description=goback server
+After=network.target
+
+[Service]
+Type=simple
+PIDFile=/run/goback.pid
+LimitNOFILE=1024
+
+Restart=on-failure
+RestartSec=10
+startLimitIntervalSec=60
+
+ExecStart=PATH_TO_BUILT_MAIN PATH_TO_PROD_CONFIG
+
+PermissionsStartOnly=true
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=goback
+
+[Install]
+WantedBy=multi-user.target
