@@ -1,4 +1,4 @@
-(**Work in progress**)  
+(Continued as [project of arduino-playground-xyz](https://github.com/arduino-playground-xyz/goback)
 
 # goback  
 Go backend for arduino watering system
